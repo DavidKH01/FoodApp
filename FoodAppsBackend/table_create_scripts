@@ -1,0 +1,15 @@
+
+# After any table operations, make sure to commit to save chances! :)
+
+# THis scriupt creates a table and stuff
+CREATE TABLE IF NOT EXISTS foods (
+    id SERIAL PRIMARY KEY,
+    category varchar(225),
+    name varchar(255),
+    rating numeric(3,2),
+    min_price_range numeric(3,0),
+    max_price_range numeric(3,0),
+    nationality varchar(255));
+
+# This script deletes a table
+DROP TABLE foods
